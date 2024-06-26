@@ -1,5 +1,4 @@
 <script>
-    export const prerender = true;
     import "../app.css";
 	  import Footer from "../components/Footer.svelte";
     import NavBar from '../components/NavBar.svelte';
