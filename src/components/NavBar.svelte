@@ -1,8 +1,8 @@
 <script lang="ts">
   import { page } from '$app/stores';
 
-  const active_class = 'bg-blue-700';
-  const n_active_class = 'hover:bg-blue-300';
+  const active_class = 'bg-blue-300';
+  const n_active_class = 'hover:bg-blue-700';
 
   // Function to determine if a link is active
   $: isActive = (path: string) => $page.route.id === path;
