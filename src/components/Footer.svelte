@@ -6,7 +6,7 @@
     .footer {
       color: white;
       text-align: center;
-      padding: 0.4rem;
+      padding: 0.2rem;
       position: fixed;
       bottom: 0;
       left: 0;
