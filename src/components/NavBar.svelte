@@ -8,7 +8,7 @@
   $: isActive = (path: string) => $page.route.id === path;
 </script>
 
-<nav class="bg-blue-600 shadow-xl h-10">
+<nav class="bg-primary shadow-xl h-10">
   <ul class="flex w-full text-white">
     <li class="flex-auto px-4 py-2 text-gray-400 text-xl cursor-default">FLOWEEB Inc.</li>
     <li class="flex-1 ">

@@ -5,7 +5,7 @@
   </script>
   
   <NavBar/>
-  <div class="bg-gray-100 main-container">
+  <div class="bg-primary-light main-container">
     <slot />
   </div>
  <Footer/>
@@ -13,7 +13,7 @@
  <style>
   /* Global styles */
   :global(body) {
-    background-color: #f3f4f6; /* bg-gray-100 */
+    /* background-color: #f3f4f6; bg-gray-100 */
     margin: 0;
     font-family: 'Arial', sans-serif;
     display: flex;
