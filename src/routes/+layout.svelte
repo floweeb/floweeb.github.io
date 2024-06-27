@@ -1,7 +1,7 @@
 <script>
     import "../app.css";
-	  import Footer from "../components/Footer.svelte";
-    import NavBar from '../components/NavBar.svelte';
+    import NavBar from '../component/NavBar.svelte';
+    import Footer from '../component/Footer.svelte';
   </script>
   
   <NavBar/>
@@ -10,7 +10,7 @@
   </div>
  <Footer/>
 
- <style>
+ <style lang="postcss">
   /* Global styles */
   :global(body) {
     /* background-color: #f3f4f6; bg-gray-100 */
