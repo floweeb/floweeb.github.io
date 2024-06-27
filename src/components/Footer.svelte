@@ -14,7 +14,7 @@
     }
   </style>
   
-  <div class="footer bg-blue-500">
+  <div class="footer bg-blue-600">
     <span>&copy; Floweeb Inc. {currentYear}</span>
   </div>
   
