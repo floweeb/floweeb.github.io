@@ -4,5 +4,5 @@
         <br>
         <span class="text-2xl">FLOWEEB Inc.</span>
     </h1>
-    <p>Still in progress</p>
+    <p>Still in progress...</p>
 </div>
