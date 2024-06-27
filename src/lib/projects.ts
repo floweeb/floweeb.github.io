@@ -8,7 +8,7 @@ export interface Project {
     { name: "Portfolio Website", url: "/",
         desc: "A website to serve as a pseudo-CV/resume."},
     { name: "Github page", url: "https://github.com/floweeb",
-        desc: "In progression, check my github page for unfinished projects." },
+        desc: "You can check my github page for other unfinished projects." },
     // Add more projects as needed
   ];
   
