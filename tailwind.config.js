@@ -5,9 +5,10 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#2563EB', // This is bg-blue-600
-          light: '#eff6ff', // This is bg-blue-50
-          hover: '#1e3a8a', // This is bg-blue-900
+          DEFAULT: '#535353',
+          light: '#f2f3f5',
+          hover: '#c2c3c4bb',
+          active: '#93c5fd',
         },
       },
     },
