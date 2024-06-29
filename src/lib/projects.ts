@@ -6,9 +6,11 @@ export interface Project {
   
   const projects: Project[] = [
     { name: "Portfolio Website", url: "/",
-        desc: "A website to serve as a pseudo-CV/resume."},
+        desc: `A website, specifically this one, to serve as a pseudo-resume
+         for show casing my work.`},
     { name: "Github page", url: "https://github.com/floweeb",
-        desc: "You can check my github page for other unfinished projects." },
+        desc: `Here you can check my github page for the code of, finished
+         and unfished works.` },
     // Add more projects as needed
   ];
   

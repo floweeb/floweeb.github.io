@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
 
-  const active_class = 'bg-blue-300';
+  const active_class = 'bg-primary-active';
   const n_active_class = 'hover:bg-primary-hover';
 
   // Function to determine if a link is active
