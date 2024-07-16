@@ -4,7 +4,7 @@
 </script>
 <div>
     <h1>PROJECTS</h1>
-    <ProjectCard project={projects[0]} />
-    <ProjectCard project={projects[1]} />
-    <ProjectCard project={projects[2]} />
+    {#each projects as project}
+        <ProjectCard project={project}/>
+    {/each}
 </div>
