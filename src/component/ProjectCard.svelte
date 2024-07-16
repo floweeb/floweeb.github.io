@@ -13,7 +13,13 @@
     </div>
     <div class="content bg-primary-light">
       <p class="description">{project.desc}</p>
-      <a href={project.url} target="_blank" rel="noopener noreferrer" class="button bg-primary hover:bg-primary-hover">Visit Project</a>
+      {#if project.url === "/"}
+        <a href={project.url} aria-disabled="true" rel="noopener noreferrer" 
+        class="button bg-primary hover:bg-primary-hover">Back Home</a>
+      {:else}
+        <a href={project.url} target="_blank" rel="noopener noreferrer" 
+        class="button bg-primary hover:bg-primary-hover">Visit Project</a>
+      {/if}
     </div>
   </div>
 
