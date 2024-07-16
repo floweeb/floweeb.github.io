@@ -10,7 +10,7 @@
 
 <nav class="bg-primary shadow-xl h-10">
   <ul class="flex w-full text-white">
-    <li class="flex-auto px-4 py-2 text-xl cursor-default">FLOWEEB Inc.</li>
+    <li class="flex-auto px-4 py-2 text-xl cursor-default cool-title">FLOWEEB Inc.</li>
     <li class="flex-1 ">
       <a href="/" class="transition-colors duration-700 block text-center px-4 py-2 {isActive('/') ? active_class : n_active_class}">Home</a>
     </li>
@@ -19,3 +19,6 @@
     </li>
   </ul>
 </nav>
+
+<style>
+</style>
