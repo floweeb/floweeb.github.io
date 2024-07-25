@@ -3,7 +3,7 @@
 </script>
   
 <div class="footer bg-primary text-sm">
-  <span>&copy;Floweeb Inc. {currentYear} E-mail: floydqaranja@gmail.com</span>
+  <span>&copy;Floweeb Inc. {currentYear} E-mail: <a href="mailto:floydqaranja@gmail.com" class="text-primary-active hover:underline">floydqaranja@gmail.com</a></span>
 </div>
   
 <style>

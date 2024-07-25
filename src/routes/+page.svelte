@@ -1,9 +1,10 @@
 <script lang="ts">
-  import { fade, fly } from 'svelte/transition';
+    import { fade, fly } from 'svelte/transition';
+	import UnderConstruction from '$lib/UnderConstruction.svelte';
 
     let ready: boolean = false;
-    let duration: number = 1000;
-    let default_delay: number = 300;
+    let duration: number = 1000, default_delay: number = 300;
+    let x: number = 40, y: number = 20
   // Simulate content loading
   setTimeout(() => {
     ready = true;
@@ -12,42 +13,45 @@
 
 {#if ready}
   <div class="container mx-auto px-4 py-8 max-w-2xl">
-    <div class="text-center" in:fade={{ duration: duration }}>
-      <h1 class="text-primary-active">
-        <span class="text-xl font-bold">Welcome to</span>
-        <br>
-        <span class="text-3xl font-extrabold">FLOWEEB Inc.</span>
-      </h1>
-      <p class="mt-2" in:fly={{ y: 20, duration: duration }}>Innovating through code, one project at a time.</p>
+    <div class="text-center" in:fade={{ duration }}>
+        <h1 class="text-primary-active">
+            <span class="text-xl sm:text-2xl font-bold">Welcome to</span>
+            <br>
+            <span class="text-3xl sm:text-4xl font-extrabold">FLOWEEB Inc.</span>
+          </h1>
+      <p class="mt-2" in:fly={{ x, duration }}>Innovating through code, one project at a time.</p>
     </div>
     
-    <div class="mt-8" in:fly={{ y: 20, duration: duration, delay: default_delay }}>
+    <div class="mt-8" in:fly={{ y, duration, delay: default_delay }}>
       <h2 class="text-2xl font-bold text-primary-active">About Me</h2>
-      <p class="mt-2">Hello! I'm [Your Name], a passionate software engineer with expertise in [Your Key Skills]. With [X] years of experience, I've worked on a variety of projects that have honed my skills in [specific technologies or domains].</p>
+      <p class="mt-2">Hello! I'm Floyd, a passionate computer scientist with expertise in software development, networking and cyber security. With 6 years of experience, I've worked on a variety of projects that have honed my skills in debugging errors, working with legacy code and making minimal and simply designed software.</p>
     </div>
     
-    <div class="mt-8" in:fly={{ y: 20, duration: duration, delay: default_delay * 2 }}>
+    <div class="mt-8" in:fly={{ y, duration, delay: default_delay * 2 }}>
       <h2 class="text-2xl font-bold text-primary-active">Skills</h2>
       <ul class="list-disc list-inside mt-2">
-        <li>Languages: [e.g., TypeScript, JavaScript, Python]</li>
-        <li>Frameworks: [e.g., Svelte, React, Node.js]</li>
-        <li>Tools: [e.g., Git, Docker, AWS]</li>
-        <li>Soft Skills: Problem-solving, Team Collaboration, Agile Methodologies</li>
+        {#each ['Languages: Typescript, Golang, Php, C#', 'Frameworks: Svelte, Node.js', 'Tools: Git, Docker', 'Soft Skills: Problem-solving, Team Collaboration, good communication'] as skill}
+          <li class="transition-transform duration-200 hover:translate-x-2">{skill}</li>
+        {/each}
       </ul>
     </div>
+   
+<div class="mt-8" in:fly={{ y, duration, delay: default_delay * 3 }}>
+    <h2 class="text-2xl font-bold text-primary-active">Featured Project</h2>
+    <p class="mt-2">Check out my game demo site:</p>
+    <ul class="list-disc list-inside mt-2">
+      <li>
+        <a href="https://floweeb.github.io/games_demo/" target="_blank" rel="noopener noreferrer" class="text-primary-active hover:underline">
+          Games Demo Site
+        </a>: A collection of interactive games showcasing my web development skills.
+      </li>
+    </ul>
+  </div>
+  
+<UnderConstruction/>
     
-    <div class="mt-8" in:fly={{ y: 20, duration: duration, delay: default_delay * 3 }}>
-      <h2 class="text-2xl font-bold text-primary-active">Featured Projects</h2>
-      <p class="mt-2">While my portfolio is under construction, here are a few highlights of my work:</p>
-      <ul class="list-disc list-inside mt-2">
-        <li>[Project 1 Name]: Brief description</li>
-        <li>[Project 2 Name]: Brief description</li>
-        <li>[Project 3 Name]: Brief description</li>
-      </ul>
-    </div>
-    
-    <div class="mt-8 text-center" in:fade={{ duration: duration, delay: default_delay * 4 }}>
-      <p>Full portfolio coming soon. For inquiries, please contact me at: <a href="mailto:your.email@example.com" class="text-primary-active hover:underline">your.email@example.com</a></p>
+    <div class="mt-8 text-center" in:fade={{ duration, delay: default_delay * 4 }}>
+      <p>Still working on the portfolio. For inquiries, please contact me at: <a href="mailto:floydqaranja@gmail.com" class="text-primary-active hover:underline">floydqaranja@gmail.com</a>.</p>
     </div>
   </div>
 {/if}
