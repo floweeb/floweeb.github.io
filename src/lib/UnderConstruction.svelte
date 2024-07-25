@@ -16,6 +16,15 @@
     {#if showHammer}
       <span in:scale={{ duration: 500, easing: quintOut }} out:fade>🔨</span>
     {:else}
-      <span in:scale={{ duration: 500, easing: quintOut }} out:fade>🔧</span>
+        <span in:scale={{ duration: 500, easing: quintOut }} out:fade class="wrench">
+        🔧
+    </span>
     {/if}
   </div>
+
+  <style>
+    .wrench {
+      display: inline-block;
+      transform: rotate(90deg);
+    }
+  </style>
