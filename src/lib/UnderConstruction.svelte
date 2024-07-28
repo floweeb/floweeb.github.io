@@ -3,6 +3,7 @@
     import { quintOut } from 'svelte/easing';
     
     let animate_tools = true;
+    let duration: number = 2000;
 
     function toggleEmojis() {
         animate_tools = !animate_tools;
@@ -13,12 +14,12 @@
 
 <div class="flex justify-center items-center h-12 relative">
     {#if animate_tools}
-    <span class="emoji"
-        in:fly={{ x: -50, duration: 1000, easing: quintOut }} 
-        out:fly={{ x: 50, duration: 1000, easing: quintOut }}>🔨</span>
-    <span class="emoji"
-        in:fly={{ y: -50, duration: 1000, easing: quintOut }} 
-        out:fly={{ y: 50, duration: 1000, easing: quintOut }} >🔧</span>
+    <span class="emoji-container"
+        in:fly={{ x: -50, duration, easing: quintOut }} 
+        out:fly={{ x: 50, duration, easing: quintOut }}> <span class="emoji">🔨</span> </span>
+    <span class="emoji-container"
+        in:fly={{ x: 50, duration, easing: quintOut }} 
+        out:fly={{ x: -50, duration, easing: quintOut }} ><span class="emoji">🔧</span></span>
     {/if}
     <!-- {#if showHammer}
         <span 
@@ -36,10 +37,14 @@
 </div>
 
 <style>
-    .emoji {
+    .emoji-container{
         position: absolute;
         display: inline-block;
-        transform: rotate(45deg);
+
+    }
+    .emoji {
+        transform: rotate(45deg), rotate(90deg);
+        transition: all;
     }
 
     /* .wrench {
