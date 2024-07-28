@@ -41,10 +41,13 @@
         position: absolute;
         display: inline-block;
 
-    }
+}
     .emoji {
+        /* @apply duration-75, rotate-45; */
+        position: absolute;
+        display: inline-block;
         transform: rotate(45deg), rotate(90deg);
-        transition: all;
+        animation: forwards;
     }
 
     /* .wrench {
