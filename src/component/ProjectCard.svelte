@@ -6,10 +6,9 @@
     // Props definition for the ProjectCard component
     export let project: Project;
     
-    import { fade } from "svelte/transition";
   </script>
   
-  <div class="card transition shadow-xl hover:shadow-lg hover:scale-95" in:fade={{ duration: 1000, delay: 500 }}>
+  <div class="card transition shadow-xl hover:shadow-lg hover:scale-95">
     <div class="header bg-primary">
       <h2>{project.name}</h2>
     </div>
