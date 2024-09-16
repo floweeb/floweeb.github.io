@@ -5,6 +5,7 @@
   
     // Props definition for the ProjectCard component
     export let project: Project;
+    
   </script>
   
   <div class="card transition shadow-xl hover:shadow-lg hover:scale-95">
