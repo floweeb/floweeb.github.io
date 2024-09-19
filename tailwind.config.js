@@ -10,6 +10,10 @@ export default {
           hover: '#c2c3c4bb',
           active: '#93c5fd',
         },
+        light: {
+          DEFAULT: '#ffebee',
+          red: '#A91101'
+        }
       },
     },
   },
