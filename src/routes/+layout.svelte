@@ -4,11 +4,13 @@
     import Footer from '../component/Footer.svelte';
   </script>
   
-  <NavBar/>
-  <div class="bg-primary-light main-container">
-    <slot />
+  <div class="bg-light">    
+    <NavBar/>
+    <div class="main-container">
+      <slot />
+    </div>
+  <Footer/>
   </div>
- <Footer/>
 
  <style lang="postcss">
   /* Global styles */

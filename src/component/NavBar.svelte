@@ -19,9 +19,9 @@
     </li>
   </ul>
 </nav> -->
-<nav class="border-b-2 h-10">
-  <ul class="flex w-full py-2">
-    <li class="flex-auto">FLOYD</li>
+<nav class="border-b-2 border-light-red h-10">
+  <ul class="flex w-full py-2 space-x-4">
+    <li class="flex-auto mx-4 font-bold cursor-default">KARANJA</li>
     <li >
       <a href="/">HOME</a>
     </li>
@@ -29,7 +29,13 @@
       <a href="/">ABOUT</a>
     </li>
     <li >
-      <a href="/projects">PROJECTS</a>
+      <a href="/projects" class="mr-2">PROJECTS</a>
     </li>
   </ul>
 </nav>
+
+<style lang="postcss">
+  li a:hover{
+    color: theme('colors.light.red')
+  }
+</style>

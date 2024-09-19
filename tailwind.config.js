@@ -12,7 +12,7 @@ export default {
         },
         light: {
           DEFAULT: '#ffebee',
-          red: '#A91101'
+          red: '#ef9a9a'
         }
       },
     },
